@@ -1,0 +1,87 @@
+@import url(/static/css/reset.css);
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/static/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+    font-style: normal;
+}
+
+$text: #282828;
+$rose: linear-gradient(135deg, #ff9a8b 0%, #ff95d5 100%);
+
+body { 
+    font-family: 'Montserrat';
+    display: flex;
+    background: #FCFCFC;
+    flex-direction: column;
+    padding: 18px;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+main {
+    display: grid;
+    gap: 10px;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #282828;
+        margin-top: 20px;
+    }
+
+    .overflow-set {
+        white-space: nowrap;
+        overflow-x: auto;
+        display: grid;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .list {
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+
+        p {
+            font-size: 15px;
+            color: #282828;
+        }
+    }
+
+    .list-point {
+        border-radius: 9px;
+        width: 32px;
+        height: 32px;
+        background: $rose;
+        color: #fff;
+        font-weight: 700;
+
+        display: grid;
+        place-items: center;
+    }
+}
+
+footer {
+    width: calc(100% + 36px);
+    margin: -18px;
+    background: $rose;
+    margin-top: 50px;
+    
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: #fff;
+        font-weight: 500;
+    }
+}

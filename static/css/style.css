@@ -1,0 +1,128 @@
+@import url(/static/css/reset.css);
+@font-face {
+  font-family: "Montserrat";
+  src: url(/static/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat";
+  display: flex;
+  background: #FCFCFC;
+  flex-direction: column;
+  padding: 18px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+  flex: 1;
+}
+main .stock {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  color: #282828;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+main .main-img {
+  width: 100%;
+  background-image: url(../../img/summertime24.jpg);
+  height: 214px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 29px;
+}
+main .main-text {
+  text-align: center;
+  font-size: 15px;
+  color: #282828;
+}
+main .btn-grid {
+  display: grid;
+  gap: 15px;
+}
+main .first-stroke {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+main .apple-link, main .android-link {
+  display: grid;
+  place-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 21px;
+  box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+}
+main .apple-link label, main .android-link label {
+  font-weight: 700;
+  color: #a2a2a2;
+  font-size: 10px;
+  margin-top: 10px;
+}
+main .sec-stroke button {
+  width: 100%;
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff95d5 100%);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 17px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+}
+main .third-stroke {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+main .third-stroke button {
+  font-weight: 600;
+  text-align: center;
+  padding: 17px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff95d5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+main .rules {
+  width: 100%;
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff95d5 100%);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 17px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  width: calc(100% + 36px);
+  margin: -18px;
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff95d5 100%);
+  margin-top: 50px;
+}
+footer .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
